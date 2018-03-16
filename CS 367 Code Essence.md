@@ -1,6 +1,5 @@
 ﻿# CS 367 Code Essence
 
-标签（空格分隔）： CS
 
 ---
 (1) Assume that variable words is a List containing k strings, for some integer k greater than or equal to zero. Write code that changes words to contain 2*k strings by adding a new copy of each string right after the old copy. For example, if words is like this before your code executes:
