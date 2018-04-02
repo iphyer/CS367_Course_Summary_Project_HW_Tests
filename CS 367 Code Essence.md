@@ -404,4 +404,75 @@ boolean isPalindrome(String s){
 	}  
 ```
 
+(20) Write the auxiliary method smallest used by the delete method given above. The header for smallest is:
+
+```java
+private K smallest(BSTnode<K> n)
+// precondition: n is not null
+// postcondition: return the smallest value in the subtree rooted at n
+```
+
+Method 1:
+```java
+private K smallest(BSTnode<K> n)
+// precondition: n is not null
+// postcondition: return the smallest value in the subtree rooted at n
+
+{
+    if (n.getLeft() == null) {
+        return n.getKey();
+    } else {
+        return smallest(n.getLeft());
+    }
+}
+```
+
+Method 2:
+```java
+    private K smallest(BSTnode<K> n) {
+ 
+        /* loop down to find the leftmost leaf */
+        while ( n.getLeft() != null) {
+            n = n.getLeft();
+        }
+        return ( n.getKey() );
+    }
+     
+```
+
+(21) a complete program that counts the number of occurrences of each word in a document.
+
+```java
+import java.util.*;
+import java.io.*;
+
+public class CountWords {
+    public static void main(String[] args) throws Exception {
+        if (args.length != 1) {
+            System.err.println("usage: java CountWords file_name");
+            return;
+        }
+        
+        Map<String, Integer> wordCount = new TreeMap<String, Integer>();
+        Scanner in = new Scanner(new File(args[0]));
+        in.useDelimiter("\\W+");
+        while (in.hasNext()) {
+            String word = in.next();
+            Integer count = wordCount.get(word);
+            if (count == null) {
+                wordCount.put(word, 1);
+            } else {
+                wordCount.put(word, count + 1);
+            }
+        }
+        for (String word : wordCount.keySet()) {
+            System.out.println(word + " " + count.get(word));
+        }
+    }
+} // CountWords
+```
+(The statement `in.useDelimiter("\\W");` tells the Scanner that words are delimited by non-word characters. Without it, the program would look for "words" separated by spaces, considering "details" and "details.)" to be (different) words.)
+
+
+
   [1]: http://pages.cs.wisc.edu/~hasti/cs367-common/readings/Trees/tynAns2.gif
