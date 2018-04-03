@@ -473,6 +473,18 @@ public class CountWords {
 ```
 (The statement `in.useDelimiter("\\W");` tells the Scanner that words are delimited by non-word characters. Without it, the program would look for "words" separated by spaces, considering "details" and "details.)" to be (different) words.)
 
+(20) Validates the position and returns it as a node.
+
+```java
+/∗∗ Validates the position and returns it as a node. ∗/
+private Node<E> validate(Position<E> p) throws IllegalArgumentException {
+	if (!(p instanceof Node)) throw new IllegalArgumentException("Invalid p"); 
+	Node<E> node = (Node<E>) p; // safe cast
+	if (node.getNext() == null) // convention for defunct node
+		throw new IllegalArgumentException("p is no longer in the list"); 
+	return node;
+}
+```
 
 
   [1]: http://pages.cs.wisc.edu/~hasti/cs367-common/readings/Trees/tynAns2.gif
