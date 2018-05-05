@@ -607,9 +607,10 @@ public void topOrderAll() {
 
 (23)Write a Graph method isConnected that returns true if and only if the graph is connected. Assume that every node has a list of its predecessors as well as a list of its successors.
 
-```java
+
 The solution to this question involves doing a modified depth-first search (following both outgoing and incoming edges from any node in the graph); the graph is connected if and only if all nodes are reached during that search.
 
+```java
 public boolean isConnected(  ) {
     if (nodes.size() == 0) {
         return true;
