@@ -605,4 +605,43 @@ public void topOrderAll() {
 }
 ```
 
+(23)Write a Graph method isConnected that returns true if and only if the graph is connected. Assume that every node has a list of its predecessors as well as a list of its successors.
+
+```java
+The solution to this question involves doing a modified depth-first search (following both outgoing and incoming edges from any node in the graph); the graph is connected if and only if all nodes are reached during that search.
+
+public boolean isConnected(  ) {
+    if (nodes.size() == 0) {
+        return true;
+    }
+
+    // do modified dfs from some node
+    Graphnode<T> n = nodes.get(0);
+    twoWayDfs(n);
+ 
+    // graph IS connected if and only if all nodes were visited
+    for (Graphnode<T>> n : nodes) {
+        if (!n.getVisited()) {
+            return false;
+        }
+    }
+    return true;
+}
+ 
+private void twoWayDfs(Graphnode<T> n) {
+    // do a dfs but follow predecessor edges as well as successors
+    n.setVisited(true);
+    for (Graphnode<T> m : n.getPredecessors()) {
+        if (!m.getVisited()) {
+            twoWayDfs(m);
+        }    
+    }
+    for (Graphnode<T> m : n.getSuccessors()) {
+        if (!m.getVisited()) {
+            twoWayDfs(m);
+        }    
+    }
+}
+```
+
   [1]: http://pages.cs.wisc.edu/~hasti/cs367-common/readings/Trees/tynAns2.gif
