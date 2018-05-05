@@ -567,7 +567,42 @@ public class Solution {
         return t1;
     }
 }
+```
 
+(22) Toplogical Order
+
+```java
+public int topNum(Graphnode<T> n, int num) throws CycleException {
+    n.setMark(IN_PROGRESS);
+    for (Graphnode<T> m : n.getSuccessors()) {
+
+        if (m.getMark() == IN_PROGRESS) {
+            // no topological ordering for a cyclic graph!
+            throw new CycleException();
+        }
+        if (m.getMark() != DONE) {
+            num = topNum(m, num);
+        }
+    }
+     
+    // here when n has no more successors
+    n.setMark(DONE);
+    n.setNumber(num);
+    return num - 1;
+}
+```
+The `topNum` method given above only assigns numbers to the nodes reachable from node `n`. Write pseudo code for method `numberGraph`, similar to the code given for method `graphHasCycle` above, that assigns topological numbers to all nodes in a graph.
+
+```java
+public void topOrderAll() {
+    mark all nodes unvisited;
+    int n = nodes.size();
+    for each node k in the graph {
+        if (node k is marked unvisited) {
+            n = topNum(k, n);
+        }
+    }
+}
 ```
 
   [1]: http://pages.cs.wisc.edu/~hasti/cs367-common/readings/Trees/tynAns2.gif
