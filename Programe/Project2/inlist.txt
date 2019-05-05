@@ -1,0 +1,6 @@
+pets1.jpg 15 "Big ears"
+pets2.jpg 8 "Don't bite!"
+pets3.jpg 15 "Mom & kids"
+pets4.jpg 15 
+pets5.jpg 20 pals
+pets6.jpg 10 "He's mine!"

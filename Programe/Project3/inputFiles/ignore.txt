@@ -1,0 +1,80 @@
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+he him his himself he's he'll he'd
+she her hers herself she's she'll she'd
+they them their theirs themselves they're they'll they've the'd
+it its itself it's it'll it'd
+I my me mine myself I'm I'll I've I'd
+you your yours yourself you're you'll you've you'd
+we us our ours ourself we've we'll we've we're we'd
+this those these
+that that's
+here here's
+there there's
+a an the
+but
+if then else otherwise
+in on upon over under
+with
+to
+at
+by
+than
+from
+am is are isn't aren't will won't
+be been
+was were wasn't weren't
+can can't
+could couldn't
+would wouldn't
+should shouldn't
+shall
+may might
+has hasn't have haven't had hadn't
+go goes went going get got
+do does did done don't doing
+say says said saying tell tells told telling write writes written wrote writing
+together apart
+yet
+or and not true false
+either neither both
+one two three four five six seven eight nine ten twenty
+toward towards
+near
+far
+forward forwards
+back
+backward backwards
+under over underhand overhand overall
+other
+some
+none
+only
+all any each every
+who what where when why how which whether
+whom whose whoever whomever who's who'll who'd
+anyone anything
+someone something
+noone no-one nothing
+never always sometimes maybe perhaps
+within without
+for
+so
+of
+as
+on
+up down
+very
+much more too most
+about
+out
+again
+like
+hate
+off
+into onto
+yes no
+now then
+before after
+until til
+unless
+ah oh ha argh

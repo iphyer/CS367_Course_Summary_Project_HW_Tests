@@ -1,0 +1,43 @@
+Enter command: find chasf
+chasf:cdg,yvr,szg,mxp,cur,lvx,hpv
+
+Enter command: find RonaldMcDonald
+Employee not found
+
+Enter command: search cdg
+cdg:bigboss,chasf,mickeymouse
+
+Enter command: search UGM
+destination not found
+
+Enter command: information
+Employees: 7, Destinations: 37
+# of destinations/Employee: most 13, least 2, average 6.3
+# of Employees/destination: most 3, least 1, average 1.2
+Most popular destination: cdg [3]
+
+Enter command: remove bigboss
+Employee removed
+
+Enter command: information
+Employees: 6, Destinations: 32
+# of destinations/Employee: most 13, least 2, average 6.2
+# of Employees/destination: most 2, least 1, average 1.2
+Most popular destination: cdg,grb,ind,ord,dtw [2]
+
+Enter command: discontinue cdg
+destination discontinued
+
+Enter command: information
+Employees: 6, Destinations: 31
+# of destinations/Employee: most 13, least 2, average 5.8
+# of Employees/destination: most 2, least 1, average 1.1
+Most popular destination: grb,ind,ord,dtw [2]
+
+Enter command: find bigboss
+Employee not found
+
+Enter command: search cdg
+destination not found
+
+Enter command: quit

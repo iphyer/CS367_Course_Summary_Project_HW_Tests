@@ -1,0 +1,19 @@
+Parameters used:
+  # items to hash: 5
+  random # seed: 292929
+  max load factor: 0.8
+  initial size of hash table: 2
+  max chain length: none
+  output file name: sampleOutput.txt
+Hashtable statistics:
+  current table size:       11
+  # items in table:         5
+  current load factor:      0.45454545454545453
+  longest chain length:     2
+  # 0-length chains:        7
+  avg (non-0) chain length: 1.25
+Hashtable contents:
+1: [2044743559]
+2: [1500885399]
+7: [1297111108]
+8: [-1757618250, -1757792391]

@@ -1,0 +1,58 @@
+Testing Commands:
+
+(1)
+
+inputFiles/names.txt Epic35.html inputFiles/emptyIgnore.txt 25
+
+# keys: 116
+avg path length: 7.612069
+linear avg path: 58.5
+
+
+(2)
+inputFiles/mary.had.txt Mary13.html inputFiles/ignore.txt 13
+
+# keys: 26
+avg path length: 4.961538
+linear avg path: 13.5
+
+
+(3)
+
+inputFiles/on.first.txt Wh0353.html inputFiles/ignore2.txt 35
+
+# keys: 96
+avg path length: 8.677083
+linear avg path: 48.5
+
+(4)
+
+inputFiles/Wisconsin.txt Wisconsin35.html inputFiles/ignore2.txt 35
+
+# keys: 31
+avg path length: 5.645161
+linear avg path: 16.0
+
+(5)
+
+inputFiles/merchant.txt Merchant25.html inputFiles/ignore2.txt 25
+
+# keys: 75
+avg path length: 6.040000
+linear avg path: 38.0
+
+(6) 
+
+inputFiles/gettysburg.txt Gettysburg35.html inputFiles/ignore.txt 35
+
+# keys: 87
+avg path length: 7.712644
+linear avg path: 44.0
+
+(7)
+
+inputFiles/declaration.txt Declaration30.html inputFiles/ignore.txt 30
+
+# keys: 466
+avg path length: 11.416309
+linear avg path: 233.5

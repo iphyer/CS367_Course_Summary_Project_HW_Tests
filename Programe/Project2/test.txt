@@ -1,0 +1,15 @@
+load inlist.txt
+display
+forward
+jump -2
+jump x
+display
+jump 4
+remove
+jump 2
+edit "All ears"
+add seth.jpg
+edit "Seth & me"
+update 20
+display
+quit

@@ -1,0 +1,61 @@
+Enter command: load inlist.txt
+Enter command: display
+Big ears [pets1.jpg, 15]
+Don't bite! [pets2.jpg, 8]
+Mom & kids [pets3.jpg, 15]
+[pets4.jpg, 15]
+pals [pets5.jpg, 20]
+He's mine! [pets6.jpg, 10]
+Enter command: forward
+	Big ears [pets1.jpg, 15]
+-->	Don't bite! [pets2.jpg, 8] <----
+	Mom & kids [pets3.jpg, 15]
+Enter command: jump -2
+	pals [pets5.jpg, 20]
+-->	He's mine! [pets6.jpg, 10] <----
+	Big ears [pets1.jpg, 15]
+Enter command: jump x
+invalid jump count
+Enter command: display
+He's mine! [pets6.jpg, 10]
+Big ears [pets1.jpg, 15]
+Don't bite! [pets2.jpg, 8]
+Mom & kids [pets3.jpg, 15]
+[pets4.jpg, 15]
+pals [pets5.jpg, 20]
+Enter command: jump 4
+	Mom & kids [pets3.jpg, 15]
+-->	[pets4.jpg, 15] <----
+	pals [pets5.jpg, 20]
+Enter command: remove
+	Mom & kids [pets3.jpg, 15]
+-->	pals [pets5.jpg, 20] <----
+	He's mine! [pets6.jpg, 10]
+Enter command: jump 2
+	He's mine! [pets6.jpg, 10]
+-->	Big ears [pets1.jpg, 15] <----
+	Don't bite! [pets2.jpg, 8]
+Enter command: edit "All ears"
+	He's mine! [pets6.jpg, 10]
+-->	All ears [pets1.jpg, 15] <----
+	Don't bite! [pets2.jpg, 8]
+Enter command: add seth.jpg
+	All ears [pets1.jpg, 15]
+-->	[seth.jpg, 5] <----
+	Don't bite! [pets2.jpg, 8]
+Enter command: edit "Seth & me"
+	All ears [pets1.jpg, 15]
+-->	Seth & me [seth.jpg, 5] <----
+	Don't bite! [pets2.jpg, 8]
+Enter command: update 20
+	All ears [pets1.jpg, 15]
+-->	Seth & me [seth.jpg, 20] <----
+	Don't bite! [pets2.jpg, 8]
+Enter command: display
+Seth & me [seth.jpg, 20]
+Don't bite! [pets2.jpg, 8]
+Mom & kids [pets3.jpg, 15]
+pals [pets5.jpg, 20]
+He's mine! [pets6.jpg, 10]
+All ears [pets1.jpg, 15]
+Enter command: quit
